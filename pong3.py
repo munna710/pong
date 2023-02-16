@@ -14,7 +14,7 @@ white = (255, 255, 255)
 black = (0, 0, 0)
 
 # Sprite Classes
-sound=pygame.mixer.Sound(r"C:\Users\user\Desktop\New folder\game developement\bounce.wav")
+sound=pygame.mixer.Sound("bounce.wav")
 sound.set_volume(10)
 class Paddle1(pygame.sprite.Sprite):
     def __init__(self):
@@ -35,7 +35,7 @@ class Paddle2(pygame.sprite.Sprite):
 class Ball(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
-        self.image = pygame.image.load(r"C:\Users\user\Desktop\New folder\game developement\football.png")
+        self.image = pygame.image.load("football.png")
         self.rect = self.image.get_rect()
         self.speed = 10
         self.dx = 1
